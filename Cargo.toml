@@ -5,3 +5,4 @@ authors = ["Baptiste Fontaine <b@ptistefontaine.fr>"]
 
 [dependencies]
 clap = "~2.19.0"
+unicode-segmentation = "1.1.0"

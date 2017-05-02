@@ -1,6 +1,3 @@
-use std::io::Lines;
-
-pub fn sort_lines<T>(ls : Lines<T>) -> Lines<T> {
+pub fn sort_vec(v : &mut Vec<String>) {
     // TODO
-    return ls;
 }

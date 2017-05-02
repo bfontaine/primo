@@ -34,7 +34,15 @@ fn main() {
         Ok(file) => BufReader::new(file),
     };
 
-    for line in primo::sort_lines(reader.lines()) {
-        println!("{}", line.unwrap());
+    let mut lines = Vec::new();
+
+    for line in reader.lines() {
+        lines.push(line.unwrap())
+    }
+
+    primo::sort_vec(&mut lines);
+
+    for line in lines {
+        println!("{}", line);
     }
 }

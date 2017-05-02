@@ -1,0 +1,7 @@
+[package]
+name = "primo"
+version = "0.1.0"
+authors = ["Baptiste Fontaine <b@ptistefontaine.fr>"]
+
+[dependencies]
+clap = "~2.19.0"

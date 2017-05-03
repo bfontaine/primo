@@ -12,3 +12,12 @@ license = "MIT"
 [dependencies]
 clap = "~2.19.0"
 unicode-segmentation = "1.1.0"
+
+[lib]
+name = "primo"
+path = "src/primo.rs"
+
+[[bin]]
+name = "primo"
+path = "src/main.rs"
+doc = false

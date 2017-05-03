@@ -1,6 +1,6 @@
 extern crate clap;
+extern crate primo;
 
-mod primo;
 use std::error::Error;
 use std::fs::File;
 use std::io::BufReader;

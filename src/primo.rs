@@ -4,6 +4,9 @@ use self::unicode_segmentation::UnicodeSegmentation;
 // FIXME unfortunately this is an expensive function and Rust's sort_by_key
 // calls it multiple times:
 //  https://github.com/rust-lang/rust/issues/34447
+//
+// We may want to do a Schwartzian-like transform but it needs to allocate
+// memory.
 fn numerical_string_key(s : &String) -> Vec<i32> {
     // need to decide what we want here
     let mut k : Vec<i32> = Vec::with_capacity(s.len());

@@ -57,3 +57,11 @@ fn main() {
     }
 }
 ```
+
+## FAQ
+
+### What about `sort`’s `-V` option?
+
+The GNU `coreutils` package has a `sort` implementation that supports `primo`’s
+main use-case with its `-V` option. I unfortunately learnt about this option
+after writing `primo`.

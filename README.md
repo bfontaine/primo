@@ -58,6 +58,13 @@ fn main() {
 }
 ```
 
+## Known Issues
+
+* The sort is quite slow for now because the parsing function is called
+  multiple times on each string
+* Chars are treated as numbers, so `"abc"` will sort *after*
+  `"25bc"` and *before* `"27bc"` because `'a'`’s `i32` value is `26`.
+
 ## FAQ
 
 ### What about `sort`’s `-V` option?

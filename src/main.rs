@@ -8,7 +8,7 @@ use std::io::prelude::*;
 use std::path::Path;
 use clap::App;
 
-static VERSION : &str = "0.1.0";
+static VERSION : &str = "0.0.1";
 
 fn main() {
     let matches = App::new("primo")

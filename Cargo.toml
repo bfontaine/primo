@@ -1,6 +1,6 @@
 [package]
 name = "primo"
-version = "0.1.0"
+version = "0.0.1"
 authors = ["Baptiste Fontaine <b@ptistefontaine.fr>"]
 description = "Sort a file, correctly handling multi-digits numbers"
 homepage = "https://github.com/bfontaine/primo"

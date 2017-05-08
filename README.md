@@ -4,10 +4,11 @@
 Unlike `sort`, however, it interprets series of digits as full numbers:
 
 ```sh
-# myfile.sh
+# input
 I have 9 apples.
 I have 42 apples.
 I have 5 apples.
+
 
 # sort
 I have 42 apples.

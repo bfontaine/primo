@@ -27,6 +27,8 @@ Note this is my first ever Rust program so the code might not be the best.
 
 ### Command-Line
 
+Install with `cargo install primo`.
+
     primo [<filename>]
 
 It reads on `stdin` or from the provided file and print the sorted version on

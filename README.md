@@ -26,9 +26,10 @@ Note this is my first ever Rust program so the code might not be the best.
 
 ### Command-Line
 
-    primo <filename>
+    primo [<filename>]
 
-It reads the provided filename and print its sorted version on stdout.
+It reads on `stdin` or from the provided file and print the sorted version on
+stdout.
 
 ### Library
 

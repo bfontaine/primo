@@ -31,7 +31,8 @@ fn numerical_string_key(s : &String) -> Vec<i32> {
             },
             _ => /* non-digit */ {
                 if in_a_number {
-                    // Note e.g. "a" and "26" would get the same key
+                    // FIXME e.g. "a" and "26" would get the same key. We can
+                    // solve this by using our own comparison function
                     k.push(current_number);
                     current_number = 0;
                 }
@@ -48,6 +49,29 @@ fn numerical_string_key(s : &String) -> Vec<i32> {
 
 /**
  * Sort a vector.
+ *
+ * # Examples
+ *
+ * ```
+ * let mut lines = vec![
+ *     "my 1st line".to_string(),
+ *     "...".to_string(),
+ *     "my 15th line".to_string(),
+ *     "my 2nd line".to_string(),
+ * ];
+ *
+ * primo::sort_vec(&mut lines);
+ *
+ * // prints:
+ * //    ...
+ * //    my 1st line
+ * //    my 2nd line
+ * //    my 15th line
+ * //
+ * for line in lines {
+ *     println!("{}", line);
+ * }
+ * ```
  **/
 pub fn sort_vec(v : &mut Vec<String>) {
     v.sort_by_key(numerical_string_key);

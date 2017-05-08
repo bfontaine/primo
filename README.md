@@ -21,8 +21,6 @@ I have 9 apples.
 I have 42 apples.
 ```
 
-Note this is my first ever Rust program so the code might not be the best.
-
 ## Usage
 
 ### Command-Line
